@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background:#000;
+    overflow:hidden;
+    font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#wrapper{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+#contactImage{
+    display:block;
+    width:100%;
+    height:auto;
+    user-select:none;
+    -webkit-user-drag:none;
+    pointer-events:none;
+}
+
+/* تمام نواحی کلیک نامرئی هستند */
+
+.hotspot{
+    position:absolute;
+    display:block;
+    background:rgba(255,255,255,0);
+    border-radius:12px;
+    transition:.25s;
+}
+
+.hotspot:hover{
+    background:rgba(255,215,0,.08);
+}
+
+/* گیلان */
+
+.gilan{
+    left:56%;
+    top:13.4%;
+    width:35%;
+    height:10.5%;
+}
+
+/* اصفهان */
+
+.esfahan{
+    left:56%;
+    top:27.4%;
+    width:35%;
+    height:10.5%;
+}
+
+/* واتساپ */
+
+.whatsapp{
+    left:56%;
+    top:41.5%;
+    width:35%;
+    height:10.5%;
+}
+
+/* بله */
+
+.bale{
+    left:56%;
+    top:55.6%;
+    width:35%;
+    height:10.5%;
+}
+
+/* اینستاگرام */
+
+.instagram{
+    left:56%;
+    top:69.8%;
+    width:35%;
+    height:10.5%;
+}
+
+@media(max-width:900px){
+
+#wrapper{
+    width:100%;
+}
+
+}
